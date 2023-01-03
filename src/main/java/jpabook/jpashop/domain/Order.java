@@ -29,10 +29,10 @@ public class Order {
     private Delivery delivery;
 
 //    private Date date; 날짜 관련 어노테이션 매핑해야됨. Java8부터는 하비어네이트에서 LocalDateTime 지원해줌
-    private LocalDateTime orderDate; //주문시간
+    private LocalDateTime orderDate; // 주문시간
 
     @Enumerated(EnumType.STRING)
-    private OrderStatus status; //주문상태 [ORDER, CANCEL]
+    private OrderStatus status; // 주문상태 [ORDER, CANCEL]
 
 
 
