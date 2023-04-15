@@ -44,7 +44,7 @@ public class MemberController {
 
     @GetMapping(value = "/members")
     public String list(Model model) {
-        List<Member> members = memberService.findMembers();
+        List<Member> members = memberService.findMembers(); //실무에서는 entity를 뿌리기 보다는 dto로 변환해서 화면에 필요한 데이터만 출력하자.
         model.addAttribute("members", members);
         return "members/memberList";
     }
